@@ -1,6 +1,6 @@
 import ValueCard from "../Card/ValueCard";
 
-import Heart from "/src/assets/heart.png";
+import Heart from "../../assets/heart.png";
 
 const OurValues = () => {
   return (

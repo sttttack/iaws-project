@@ -1,6 +1,10 @@
 import ValueCard from "../Card/ValueCard";
 
-// import Heart from "../../assets/heart.png";
+import Convo from "../../assets/convo.png";
+import Strike from "../../assets/strike.png";
+import Heart from "../../assets/heart.png";
+import Diamond from "../../assets/diamond.png";
+import Human from "../../assets/human.png";
 
 const OurValues = () => {
   return (
@@ -20,38 +24,38 @@ const OurValues = () => {
       <div className={`mt-[100px]`}>
         <div className={`flex flex-row gap-[60px]`}>
           <ValueCard
-            // image={Heart}
+            image={Convo}
             altTitle={`Collaboration`}
             title={`Collaboration`}
             description={`We actively encourage networking, knowledge-sharing, and mentorship to enhance professional growth of women in surgery.`}
           />
           <ValueCard
-            // image={Heart}
-            altTitle={`Collaboration`}
-            title={`Collaboration`}
-            description={`We actively encourage networking, knowledge-sharing, and mentorship to enhance professional growth of women in surgery.`}
+            image={Strike}
+            altTitle={`Empowerment`}
+            title={`Empowerment`}
+            description={`We promote self-confidence, leadership development, and the cultivation of essential skills to drive positive change in the field of surgery.`}
           />
           <ValueCard
-            // image={Heart}
-            altTitle={`Collaboration`}
-            title={`Collaboration`}
-            description={`We actively encourage networking, knowledge-sharing, and mentorship to enhance professional growth of women in surgery.`}
+            image={Heart}
+            altTitle={`Equality`}
+            title={`Equality`}
+            description={`We believe in equal opportunities and recognition for all women surgeons, promoting fairness and inclusivity in all aspects of the surgical profession.`}
           />
         </div>
         <div
           className={`flex flex-row justify-center items-center gap-[60px] mt-[60px] mb-[180px]`}
         >
           <ValueCard
-            // image={Heart}
-            altTitle={`Collaboration`}
-            title={`Collaboration`}
-            description={`We actively encourage networking, knowledge-sharing, and mentorship to enhance professional growth of women in surgery.`}
+            image={Diamond}
+            altTitle={`Excellence`}
+            title={`Excellence`}
+            description={`We inspire and recognize outstanding achievements among women surgeons, promoting a culture of excellence and improvement.`}
           />
           <ValueCard
-            // image={Heart}
-            altTitle={`Collaboration`}
-            title={`Collaboration`}
-            description={`We actively encourage networking, knowledge-sharing, and mentorship to enhance professional growth of women in surgery.`}
+            image={Human}
+            altTitle={`Diversity`}
+            title={`Diversity`}
+            description={`We champion inclusivity across all backgrounds, cultures, and perspectives, fostering an environment that values and respects individual differences.`}
           />
         </div>
       </div>

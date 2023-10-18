@@ -1,6 +1,6 @@
 import ValueCard from "../Card/ValueCard";
 
-import Heart from "../../assets/heart.png";
+// import Heart from "../../assets/heart.png";
 
 const OurValues = () => {
   return (
@@ -20,19 +20,19 @@ const OurValues = () => {
       <div className={`mt-[100px]`}>
         <div className={`flex flex-row gap-[60px]`}>
           <ValueCard
-            image={Heart}
+            // image={Heart}
             altTitle={`Collaboration`}
             title={`Collaboration`}
             description={`We actively encourage networking, knowledge-sharing, and mentorship to enhance professional growth of women in surgery.`}
           />
           <ValueCard
-            image={Heart}
+            // image={Heart}
             altTitle={`Collaboration`}
             title={`Collaboration`}
             description={`We actively encourage networking, knowledge-sharing, and mentorship to enhance professional growth of women in surgery.`}
           />
           <ValueCard
-            image={Heart}
+            // image={Heart}
             altTitle={`Collaboration`}
             title={`Collaboration`}
             description={`We actively encourage networking, knowledge-sharing, and mentorship to enhance professional growth of women in surgery.`}
@@ -42,13 +42,13 @@ const OurValues = () => {
           className={`flex flex-row justify-center items-center gap-[60px] mt-[60px] mb-[180px]`}
         >
           <ValueCard
-            image={Heart}
+            // image={Heart}
             altTitle={`Collaboration`}
             title={`Collaboration`}
             description={`We actively encourage networking, knowledge-sharing, and mentorship to enhance professional growth of women in surgery.`}
           />
           <ValueCard
-            image={Heart}
+            // image={Heart}
             altTitle={`Collaboration`}
             title={`Collaboration`}
             description={`We actively encourage networking, knowledge-sharing, and mentorship to enhance professional growth of women in surgery.`}

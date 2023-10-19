@@ -7,6 +7,7 @@ import About from "./UI/MainPage/About";
 import OurMission from "./UI/MainPage/OurMission";
 import OurValues from "./UI/MainPage/OurValues";
 import MembershipBenefits from "./UI/MainPage/MembershipBenefits";
+import JoinUs from "./UI/MainPage/JoinUs";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <OurMission />
         <OurValues />
         <MembershipBenefits />
+        <JoinUs />
       </main>
       <footer>
         <Footer />

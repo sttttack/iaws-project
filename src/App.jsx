@@ -6,6 +6,7 @@ import Heading from "./UI/MainPage/Heading";
 import About from "./UI/MainPage/About";
 import OurMission from "./UI/MainPage/OurMission";
 import OurValues from "./UI/MainPage/OurValues";
+import MembershipBenefits from "./UI/MainPage/MembershipBenefits";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <About />
         <OurMission />
         <OurValues />
+        <MembershipBenefits />
       </main>
       <footer>
         <Footer />

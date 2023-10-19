@@ -9,8 +9,8 @@ import Signup from "../Shared/Signup";
 
 const Footer = () => {
   return (
-    <footer className=" text-black p-4 h-[323px]">
-      <div className="container mx-auto text-center flex flex-row justify-between">
+    <footer className=" text-black p-4 h-[323px] border-t-[0.5px]	">
+      <div className="container mx-auto text-center flex flex-row justify-between py-[64px]">
         <div className={`w-[429px] h-[129px] flex gap-10 flex-col`}>
           <p className={`font-md font-light text-left`}>
             At the International Association of Women Surgeons, we recognize the

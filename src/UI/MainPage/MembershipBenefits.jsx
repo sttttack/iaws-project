@@ -8,7 +8,9 @@ import Mind from "../../assets/Mind.png";
 
 const MembershipBenefits = (props) => {
   return (
-    <div className={`w-auto h-[858px] flex flex-col items-center mt-[200px]`}>
+    <div
+      className={`w-auto h-[858px] flex flex-col items-center mt-[200px] mb-[150px]`}
+    >
       <div className={`flex justify-center items-center flex-col`}>
         <h1 className="font-extrabold text-5xl text-center">
           Membership And Benefits

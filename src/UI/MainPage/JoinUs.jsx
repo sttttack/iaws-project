@@ -6,7 +6,7 @@ const JoinUs = () => {
   return (
     <>
       <div
-        className={`h-[464px] bg-no-repeat rounded-[60px] bg-gradient-to-r from-[#000000] w-full relative`}
+        className={`h-[464px] bg-no-repeat rounded-[60px] bg-gradient-to-r from-[#000000] w-full relative mb-[170px]`}
       >
         <img
           src={Pic}

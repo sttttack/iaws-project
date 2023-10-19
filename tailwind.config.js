@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: (theme) => ({
-        "hero-pattern": "url('src/assets/heading.png')",
+        "hero-pattern": "url('public/heading.png')",
         gradient:
           "linear-gradient(180deg, #001 25.85%, rgba(0, 0, 0, 0.00) 56.24%)",
         topgradient: "linear-gradient(180deg, #FFF, transparent, #FFF)",

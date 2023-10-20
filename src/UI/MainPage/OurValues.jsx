@@ -3,7 +3,7 @@ import ValueCard from "../Card/ValueCard";
 const OurValues = () => {
   return (
     <div
-      className={`bg-mission w-auto h-auto flex justify-start items-center flex-col mt-[147px]`}
+      className={`bg-mission w-auto h-auto flex justify-start items-center flex-col mt-[147px] 3xl:mt-[-300px]`}
     >
       <div>
         <h1 className={`text-center font-extrabold text-5xl`}>Our Values</h1>

@@ -3,7 +3,7 @@
 const Member = ({ withSVG, width, height }) => {
   return (
     <button
-      className={`w-[247px] h-[${height}px] bg-[#C85BF1] rounded-[40px] text-white flex justify-center items-center gap-[10px]`}
+      className={`w-[247px] h-[${height}px] bg-[#C85BF1] rounded-[40px] text-white flex justify-center items-center gap-[10px] z-10`}
     >
       Become a member
       {withSVG && (

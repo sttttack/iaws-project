@@ -8,6 +8,7 @@ import OurMission from "./UI/MainPage/OurMission";
 import OurValues from "./UI/MainPage/OurValues";
 import MembershipBenefits from "./UI/MainPage/MembershipBenefits";
 import JoinUs from "./UI/MainPage/JoinUs";
+import Dropdown from "./UI/Shared/Dropdown";
 
 function App() {
   return (

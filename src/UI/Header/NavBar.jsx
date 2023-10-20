@@ -2,7 +2,8 @@ import LoginBtn from "../Shared/LoginBtn";
 import SignUp from "../Shared/Signup";
 
 import Group from "../../assets/Group.svg";
-import Polygon from "../../assets/Polygon.svg";
+
+import Dropdown from "../Shared/Dropdown";
 
 export default function NavBar() {
   return (
@@ -12,35 +13,20 @@ export default function NavBar() {
           <li>
             <a
               href="#"
-              className="block py-2 pl-3 pr-4 text-black"
+              className="block py-2 pl-3 pr-4 text-black text-sm"
               aria-current="page"
             >
               Home
             </a>
           </li>
           <li>
-            <div className="flex items-center">
-              <a href="#" className="block py-2 pl-3 pr-4 text-black">
-                About us
-              </a>
-              <img src={Polygon} />
-            </div>
+            <Dropdown Page={`About us`} />
           </li>
           <li>
-            <div className="flex items-center">
-              <a href="#" className="block py-2 pl-3 pr-4 text-black">
-                Membership
-              </a>
-              <img src={Polygon} />
-            </div>
+            <Dropdown Page={`Membership`} />
           </li>
           <li>
-            <div className="flex items-center">
-              <a href="#" className="block py-2 pl-3 pr-4 text-black">
-                Education
-              </a>
-              <img src={Polygon} />
-            </div>
+            <Dropdown Page={`Education`} />
           </li>
           <div className={`ml-[32px] mr-[36px]`}>
             <img src={Group} />

@@ -3,12 +3,10 @@ import ValueCard from "../Card/ValueCard";
 const OurValues = () => {
   return (
     <div
-      className={`bg-mission w-full h-auto flex justify-start items-center flex-col mt-[147px]`}
+      className={`bg-mission w-auto h-auto flex justify-start items-center flex-col mt-[147px]`}
     >
       <div>
-        <h1 className={`text-center font-extrabold text-5xl`}>
-          Membership and benefits
-        </h1>
+        <h1 className={`text-center font-extrabold text-5xl`}>Our Values</h1>
         <p className={`text-center font-light text-base w-[968px] mt-[40px]`}>
           Through our collaborative efforts, we aim to promote gender equality,
           diversity, and inclusion in the field of surgery. We believe that by

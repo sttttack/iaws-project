@@ -13,7 +13,7 @@ const JoinUs = () => {
           className={`w-[1152px] h-full object-fit absolute mix-blend-overlay`}
         />
 
-        <div className={`flex flex-col gap-9 pt-[64px] pl-[64px]`}>
+        <div className={`flex flex-col gap-9 pt-[64px] pl-[64px] relative`}>
           <h1 className={` text-white font-extrabold text-5xl`}>Join Us Now</h1>
           <p className={` text-white font-thin text-sm w-[594px]`}>
             We invite you to become a member of the International Association of

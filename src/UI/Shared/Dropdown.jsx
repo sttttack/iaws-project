@@ -26,7 +26,7 @@ const Dropdown = ({ Page }) => {
   }, []);
 
   return (
-    <div className="relative inline-block text-left" ref={dropdownRef}>
+    <div className="inline-block  text-left" ref={dropdownRef}>
       <div>
         <button
           type="button"
@@ -53,8 +53,8 @@ const Dropdown = ({ Page }) => {
       </div>
 
       <div
-        className={`absolute right-100 mt-[16px] z-50 w-[299px] h-auto origin-top-right rounded-md shadow-lg ring-1 ring-black ring-opacity-5 bg-dropdown focus:outline-none ${
-          isOpen ? "opacity-100" : "opacity-0 invisible"
+        className={`absolute mt-[16px] w-[299px] h-[274px] origin-top-right rounded-3xl shadow-lg ring-1 ring-black ring-opacity-5 bg-dropdown focus:outline-none ${
+          isOpen ? "" : "opacity-0 invisible"
         } transition-opacity duration-300 ease-in-out`}
         role="menu"
         aria-orientation="vertical"
@@ -64,7 +64,7 @@ const Dropdown = ({ Page }) => {
         <div className="py-1" role="none">
           <a
             href="#"
-            className="text-gray-700 block px-4 py-2 text-sm"
+            className="text-black text-base font-semibold block px-4 py-2 hover:text-[#C85BF1]"
             role="menuitem"
             tabIndex="-1"
             id="menu-item-0"
@@ -74,7 +74,7 @@ const Dropdown = ({ Page }) => {
           </a>
           <a
             href="#"
-            className="text-gray-700 block px-4 py-2 text-sm"
+            className="text-black text-base font-semibold block px-4 py-2 hover:text-[#C85BF1]"
             role="menuitem"
             tabIndex="-1"
             id="menu-item-1"
@@ -84,7 +84,7 @@ const Dropdown = ({ Page }) => {
           </a>
           <a
             href="#"
-            className="text-gray-700 block px-4 py-2 text-sm"
+            className="text-black text-base font-semibold block px-4 py-2 hover:text-[#C85BF1]"
             role="menuitem"
             tabIndex="-1"
             id="menu-item-2"
@@ -95,7 +95,7 @@ const Dropdown = ({ Page }) => {
           <form method="POST" action="#" role="none">
             <button
               type="submit"
-              className="text-gray-700 block w-full px-4 py-2 text-left text-sm"
+              className="text-black text-base font-semibold block px-4 py-2 hover:text-[#C85BF1]"
               role="menuitem"
               tabIndex="-1"
               id="menu-item-3"

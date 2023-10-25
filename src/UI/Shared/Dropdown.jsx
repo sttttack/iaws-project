@@ -54,7 +54,7 @@ const Dropdown = ({ Page }) => {
 
       <div
         className={`absolute mt-[16px] w-[299px] h-[274px] origin-top-right rounded-3xl shadow-lg ring-1 ring-black ring-opacity-5 bg-dropdown focus:outline-none ${
-          isOpen ? "" : "opacity-0 invisible"
+          isOpen ? "opacity-100 z-50 bg-white shadow-md	" : "opacity-0 invisible"
         } transition-opacity duration-300 ease-in-out`}
         role="menu"
         aria-orientation="vertical"

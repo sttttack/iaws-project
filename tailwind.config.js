@@ -12,9 +12,6 @@ module.exports = {
           "linear-gradient(0deg, rgba(217, 217, 217, 0.00) -6.96%, rgba(200, 91, 241, 0.20) 53.75%, rgba(255, 255, 255, 0.00) 103.16%)",
       }),
     },
-    zIndex: {
-      dropdownZ: 10,
-    },
   },
   plugins: [],
 };

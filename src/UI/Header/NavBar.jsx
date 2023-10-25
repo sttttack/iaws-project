@@ -7,7 +7,7 @@ import Dropdown from "../Shared/Dropdown";
 
 export default function NavBar() {
   return (
-    <nav className="bg-white border-gray-200">
+    <nav className="bg-white border-gray-200 relative z-50">
       <div className="max-w-screen-xl mx-auto p-4">
         <ul className="font-normal flex justify-end items-center">
           <li>

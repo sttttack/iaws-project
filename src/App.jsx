@@ -1,32 +1,37 @@
 import "./App.css";
-import NavBar from "./UI/Header/NavBar";
-import Footer from "./UI/Footer/Footer";
 
-import Heading from "./UI/MainPage/Heading";
-import About from "./UI/MainPage/About";
-import OurMission from "./UI/MainPage/OurMission";
-import OurValues from "./UI/MainPage/OurValues";
-import MembershipBenefits from "./UI/MainPage/MembershipBenefits";
-import JoinUs from "./UI/MainPage/JoinUs";
-import Dropdown from "./UI/Shared/Dropdown";
+import ErrorPage from "./UI/ErrorPage";
+
+import Home from "../src/UI/MainPage/Home";
+
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import Root from "../src/UI/Routes/Root";
+import Registation from "./UI/Registation/Registation";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    errorElement: <ErrorPage />,
+
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+    ],
+  },
+  {
+    path: "/signup",
+    element: <Registation />,
+  },
+]);
 
 function App() {
   return (
     <>
-      <header>
-        <NavBar />
-      </header>
-      <main>
-        <Heading />
-        <About />
-        <OurMission />
-        <OurValues />
-        <MembershipBenefits />
-        <JoinUs />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+      <RouterProvider router={router} />
     </>
   );
 }

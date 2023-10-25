@@ -20,13 +20,13 @@ export default function NavBar() {
             </a>
           </li>
           <li>
-            <Dropdown Page={`About us`} />
+            <Dropdown Page={`About us`} Url={`Sweet`} />
           </li>
           <li>
-            <Dropdown Page={`Membership`} />
+            <Dropdown Page={`Membership`} Url={`Sweet`} />
           </li>
           <li>
-            <Dropdown Page={`Education`} />
+            <Dropdown Page={`Education`} Url={`Sweet`} />
           </li>
           <div className={`ml-[32px] mr-[36px]`}>
             <img src={Group} />

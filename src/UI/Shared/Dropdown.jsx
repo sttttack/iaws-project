@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 
-const Dropdown = ({ Page }) => {
+const Dropdown = ({ Page, Link, Url }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -61,41 +61,22 @@ const Dropdown = ({ Page }) => {
         aria-labelledby="menu-button"
         tabIndex="-1"
       >
-        <div className="py-1" role="none">
+        <div className="flex flex-col justify-center px-3 py-4" role="none">
           <a
-            href="#"
-            className="text-black text-base font-semibold block px-4 py-2 hover:text-[#C85BF1]"
+            href={Link}
+            className="text-black text-base font-semibold block px-4 py-2 hover:text-[#C85BF1] hover:w-[243px] hover:bg-hover hover:rounded-[14px]"
             role="menuitem"
             tabIndex="-1"
             id="menu-item-0"
             onClick={closeTab}
           >
-            Account settings
+            {Url}
           </a>
-          <a
-            href="#"
-            className="text-black text-base font-semibold block px-4 py-2 hover:text-[#C85BF1]"
-            role="menuitem"
-            tabIndex="-1"
-            id="menu-item-1"
-            onClick={closeTab}
-          >
-            Support
-          </a>
-          <a
-            href="#"
-            className="text-black text-base font-semibold block px-4 py-2 hover:text-[#C85BF1]"
-            role="menuitem"
-            tabIndex="-1"
-            id="menu-item-2"
-            onClick={closeTab}
-          >
-            License
-          </a>
+
           <form method="POST" action="#" role="none">
             <button
               type="submit"
-              className="text-black text-base font-semibold block px-4 py-2 hover:text-[#C85BF1]"
+              className="text-black text-base font-semibold  px-4 py-2 hover:text-[#C85BF1] hover:bg-hover hover:rounded-[14px]"
               role="menuitem"
               tabIndex="-1"
               id="menu-item-3"

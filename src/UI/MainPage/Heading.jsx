@@ -3,7 +3,7 @@ import MoreAboutUs from "../Shared/MoreAboutUs";
 
 const Heading = (props) => {
   return (
-    <div className="w-auto h-[833px] relative bg-hero-pattern bg-no-repeat">
+    <div className="w-auto h-[833px] relative bg-hero-pattern bg-no-repeat bg-cover">
       <div className="absolute inset-0 bg-topgradient z-0"></div>
       <div className="flex h-[100vh] items-center justify-start flex-col relative mt-[168px] gap-[40px]">
         <div className="w-[756px] flex gap-[36px] flex-col mt-[-90px]">

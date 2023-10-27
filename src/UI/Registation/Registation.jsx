@@ -27,7 +27,7 @@ function Registration() {
   };
 
   return (
-    <div className={`flex items-center `}>
+    <div className={`flex items-center w-auto justify-center`}>
       <div className={`flex flex-col w-[640px] pl-[64px]`}>
         <div className={`flex items-center gap-[156px]`}>
           <NavLink

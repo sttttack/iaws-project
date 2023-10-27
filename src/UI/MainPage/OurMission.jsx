@@ -2,7 +2,7 @@ import BecomeAMember from "../Shared/BecomeAMember";
 
 const OurMission = () => {
   return (
-    <div className="relative bg-hero-pattern bg-no-repeat ">
+    <div className="relative bg-hero-pattern bg-no-repeat bg-cover">
       <div className="absolute inset-0 bg-gradient"></div>
       <div className="flex h-[100vh] items-center justify-start flex-col relative mt-[168px] gap-[40px]">
         <div className="w-[756px] flex flex-col mt-[108px] text-white">

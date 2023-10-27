@@ -4,9 +4,11 @@ import BecomeAMember from "../../UI/Shared/BecomeAMember";
 
 const JoinUs = () => {
   return (
-    <div className={`w-[1280px] relative mb-[170px] bg-mission`}>
+    <div
+      className={`flex justify-center relative mb-[170px] bg-mission w-auto h-auto`}
+    >
       <div
-        className={`ml-[5%] bg-no-repeat rounded-[60px] bg-gradient-to-r from-[#000000] relative z-50 h-[464px] w-[1152px]`}
+        className={`bg-no-repeat rounded-[60px] bg-gradient-to-r from-[#000000] relative z-50 h-[464px] w-[1152px]`}
       >
         <img
           src={Pic}

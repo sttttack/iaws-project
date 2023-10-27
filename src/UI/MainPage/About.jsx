@@ -5,8 +5,8 @@ import Antoni from "../../assets/antoni.png";
 
 const About = (props) => {
   return (
-    <div className={`flex flex-row mb-[146px] mt-[126px]`}>
-      <div className={`w-[650px] h-[321px]`}>
+    <div className={`flex flex-row justify-center mb-[146px] mt-[126px]`}>
+      <div className={`w-[650px] h-[321px] `}>
         <h1 className={`text-[48px] font-extrabold`}>About IAWS</h1>
         <p className={`text-left font-light w-[532px] h-[83px] mt-[39px]`}>
           Welcome to the International Association of Women Surgeons! Founded in

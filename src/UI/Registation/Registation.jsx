@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import RegCard from "../Card/RegCard";
+import Form from "../Shared/Form";
 
 function Registration() {
   const [formData, setFormData] = useState({
@@ -26,61 +27,88 @@ function Registration() {
   };
 
   return (
-    <div className={`flex items-center`}>
-      <div>
-        <form className="w-[640px] mx-auto" onSubmit={handleSubmit}>
-          <h1 className="text-3xl font-semibold mb-4">Sign Up</h1>
-          <div className="mb-4">
-            <input
-              type="text"
-              name="firstName"
-              value={formData.firstName}
-              onChange={handleChange}
-              placeholder="First Name"
-              className="w-full p-2 rounded border"
-            />
-          </div>
-          <div className="mb-4">
-            <input
-              type="text"
-              name="lastName"
-              value={formData.lastName}
-              onChange={handleChange}
-              placeholder="Last Name"
-              className="w-full p-2 rounded border"
-            />
-          </div>
-          <div className="mb-4">
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Email"
-              className="w-full p-2 rounded border"
-            />
-          </div>
-          <div className="mb-4">
-            <input
-              type="password"
-              name="password"
-              value={formData.password}
-              onChange={handleChange}
-              placeholder="Password"
-              className="w-full p-2 rounded border"
-            />
-          </div>
-          <div className="mb-4">
-            <button
-              type="submit"
-              className="w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+    <div className={`flex items-center `}>
+      <div className={`flex flex-col w-[640px] pl-[64px]`}>
+        <div className={`flex items-center gap-[156px]`}>
+          <NavLink
+            to="/"
+            className={`font-semibold text-xs flex items-center gap-3`}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="5"
+              height="8"
+              viewBox="0 0 5 8"
+              fill="none"
             >
-              Sign Up
-            </button>
-          </div>
-        </form>
+              <path
+                d="M0.449438 4.32435C0.228214 4.1647 0.228214 3.8353 0.449438 3.67565L4.16592 0.993507C4.43046 0.802588 4.8 0.991618 4.8 1.31786V6.68214C4.8 7.00838 4.43046 7.19741 4.16592 7.00649L0.449438 4.32435Z"
+                fill="black"
+              />
+            </svg>{" "}
+            back
+          </NavLink>
+          <h1 className={`font-extrabold text-[32px]`}>IOWS</h1>
+        </div>
+        <div className="flex flex-row items-center justify-evenly gap-[18px] w-[493px] mt-[52px]">
+          <Form step={"Personal info"} />
+          <Form step={"Professional info"} />
+          <Form step={"Finish up"} />
+        </div>
+        <div>
+          <form
+            className="w-[397px] mt-[60px] pl-[48px]"
+            onSubmit={handleSubmit}
+          >
+            <h1 className="text-[20px] font-semibold">Personal Info</h1>
+            <div className="mb-4 mt-[28px]">
+              <input
+                type="text"
+                name="fullName"
+                value={formData.firstName}
+                onChange={handleChange}
+                placeholder="Full Name"
+                className="w-[397px] h-[64px]  rounded-[16px] border pl-5"
+              />
+            </div>
+            <div className="mb-4">
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Email"
+                className="w-[397px] h-[64px]  rounded-[16px] border pl-5"
+              />
+            </div>
+            <div className="mb-4">
+              <input
+                type="password"
+                name="password"
+                value={formData.password}
+                onChange={handleChange}
+                placeholder="Password"
+                className="w-[397px] h-[64px]  rounded-[16px] border pl-5"
+              />
+            </div>
+            <div className="mb-4 flex justify-center items-center flex-col ml-[50px]">
+              <button
+                type="submit"
+                className="w-[397px] h-[54px] p-2 bg-[#C85BF1] text-white rounded-[40px] hover:bg-blue-700 mt-[16px]"
+              >
+                Continue
+              </button>
+              <p className={`w-[394px] text-center mt-5`}>
+                if you already have an account{" "}
+                <a href="#" className={`text-[#C85BF1]`}>
+                  Sign in
+                </a>
+              </p>
+            </div>
+          </form>
+        </div>
       </div>
-      <div className="flex justify-center items-center flex-col gap-14 w-full h-[100vh] bg-regBg">
+      <div className="flex justify-center items-center flex-col gap-14 w-[640px] h-[100vh] bg-regBg">
         <div className={`flex gap-14`}>
           <RegCard
             Image={

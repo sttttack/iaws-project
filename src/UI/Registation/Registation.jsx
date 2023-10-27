@@ -51,9 +51,9 @@ function Registration() {
           <h1 className={`font-extrabold text-[32px]`}>IOWS</h1>
         </div>
         <div className="flex flex-row items-center justify-evenly gap-[18px] w-[493px] mt-[52px]">
-          <Form step={"Personal info"} />
-          <Form step={"Professional info"} />
-          <Form step={"Finish up"} />
+          <Form step={"Personal info"} count={`1`} />
+          <Form step={"Professional info"} count={`2`} />
+          <Form step={"Finish up"} count={`3`} />
         </div>
         <div>
           <form
@@ -100,7 +100,7 @@ function Registration() {
               </button>
               <p className={`w-[394px] text-center mt-5`}>
                 if you already have an account{" "}
-                <a href="#" className={`text-[#C85BF1]`}>
+                <a href="#" className={`text-[#C85BF1] underline`}>
                   Sign in
                 </a>
               </p>
